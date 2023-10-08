@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %} {% comment %}
+<div>Product Home</div>
+<div>
+  {% for lines in productLine %}
+  <div>{{lines.productLineName}}</div>
+  {% endfor %}
+</div>
+<div>
+  {% for prod in product %}
+  <div>{{ prod.productName }}</div>
+  {% endfor %}
+</div>
+{% endcomment %} {% comment %} {% for entry in data %}
+<div>entry</div>
+{% endfor %} {% endcomment %}
+<div>{{ data }}</div>
+<div>{{ count }}</div>
+{% endblock content %}

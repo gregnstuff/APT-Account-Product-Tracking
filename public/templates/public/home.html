@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block content %}
+<div
+  class="flex max-w-7xl justify-between items-start dark:border-black dark:boarder bg-gradient-to-r dark:bg-gradient-to-l from-slate-950 via-slate-500 to-slate-300 rounded-xl shadow-lg shadow-gray-800"
+>
+  {% comment %} Left Section {% endcomment %}
+  <div
+    class="flex-[0_0_40%] p-5 h-fit border-slate-400 border bg-white mt-3 ml-2 rounded-lg dark:text-gray-100 dark:bg-gray-900"
+  >
+    <h2>Left Section</h2>
+    <div class="p-2.5 overflow-y-auto">
+      <!-- Display box content goes here -->
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in libero
+      non urna pulvinar fringilla. Integer auctor mi id libero tristique, sit
+      amet bibendum mi dignissim. adklhf;j fkjdskljs fd;fjdls;fja d;fljkd
+      f;ldsjkf d;lskjf adfka; jd a;dfldkj f;ldskj fad;slk adsj;fljd fdakl;
+      jfd;lakj f;dlkj fa;dsl jfds;kf jds;lajf d ;lsf j;dslk ajfd;lk jfd;ls fj
+    </div>
+  </div>
+  {% comment %} Center Section {% endcomment %}
+  <div
+    class="flex-auto p-5 border border-white bg-slate-200 m-3 rounded-lg dark:bg-gray-900"
+  >
+    <div>
+      <button type="button" class="btn">Add Account</button>
+    </div>
+    <div>
+      <button type="button" class="btn">Update Products</button>
+    </div>
+
+    <!-- Account Subscriber Options -->
+    <div
+      class="bg-slate-400 rounded-xl border border-gray-800 shadow-md shadow-gray-500 p-2.5 mt-3"
+    >
+      <h3>Account Subscriber Details:</h3>
+      <div class="form-group">
+        <label for="role">Role:</label>
+        <input type="checkbox" id="role" name="role" />
+      </div>
+      <div>
+        <label for="dropdown">Role:</label>
+        <select id="dropdown" name="dropdown" class="dark:text-black">
+          <option value="DE">DE</option>
+          <option value="RE">RE</option>
+          <option value="SDL">SDL</option>
+          <option value="SAM">SAM</option>
+          <option value="CSE">CSE</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notification">Notification:</label>
+        <input type="checkbox" id="notification" name="notification" />
+      </div>
+      <div class="form-group">
+        <label for="issues">Issues:</label>
+        <input type="checkbox" id="issues" name="issues" />
+      </div>
+      <div class="form-group">
+        <label for="training">Training:</label>
+        <input type="checkbox" id="training" name="training" />
+      </div>
+    </div>
+  </div>
+  {% comment %} Right Section {% endcomment %}
+  <div
+    class="bg-slate-400 rounded-xl border border-gray-800 shadow-md shadow-gray-500 p-2.5 mt-3 mr-2 h-fit dark:bg-gray-900"
+  >
+    <h2>Account Details</h2>
+    <div class="homescrollbox">
+      <!-- Scroll box 1 content goes here -->
+      Scroll Box 1 Content Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+    </div>
+    <h2>Product Details</h2>
+    <div class="homescrollbox">
+      <!-- Scroll box 2 content goes here -->
+      Scroll Box 2 Content Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
