@@ -1,18 +1,9 @@
-{% extends 'base.html' %} {% block content %} {% comment %}
-<div>Product Home</div>
-<div>
-  {% for lines in productLine %}
-  <div>{{lines.productLineName}}</div>
-  {% endfor %}
-</div>
-<div>
-  {% for prod in product %}
-  <div>{{ prod.productName }}</div>
-  {% endfor %}
-</div>
-{% endcomment %} {% comment %} {% for entry in data %}
-<div>entry</div>
-{% endfor %} {% endcomment %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <div>{{ data }}</div>
 <div>{{ count }}</div>
-{% endblock content %}
+<div>
+  <ul id="tree"></ul>
+</div>
+{% endblock content %} {% block js_block%}
+<script src="{% static 'js/prodhome.js' %}" defer></script>
+{{ data|json_script }} {% endblock js_block %}

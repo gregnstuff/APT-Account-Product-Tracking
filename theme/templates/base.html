@@ -10,7 +10,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {% tailwind_css %}
+    {% tailwind_css %} {% comment %}
+    <script type="module" src="src/js/controller.js"></script>
+    {% endcomment %}
   </head>
 
   <body class="bg-gray-50 dark:bg-slate-700 text-black dark:text-gray-50">
@@ -18,5 +20,6 @@
     <div class="container mx-auto pt-8">
       {% block content %}{% endblock content %}
     </div>
+    {% block js_block %}{% endblock js_block %}
   </body>
 </html>
